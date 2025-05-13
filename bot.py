@@ -5,10 +5,10 @@ from keep_alive import keep_alive
 keep_alive()
 
 from dotenv import load_dotenv
-import os
-
 load_dotenv()
-TOKEN = os.getenv("TOKEN")
+
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [['دکمه کانال', 'دکمه اطلاعات تماس'], ['دکمه پیام خودکار']]
